@@ -37,7 +37,7 @@ if ((shipping == 0) && (customers !== 1)) {
     console.log(FREE_WARNING)
 }
 
-country == 'NK' ? console.log(WARNING) : console.log('Price: ', currency +  (shoes + toys + batteries + pens + shirts + shipping))
+country == 'NK' ? console.log(BANNED_WARNIN) : console.log('Price: ', currency +  (shoes + toys + batteries + pens + shirts + shipping))
 
 /*
 
