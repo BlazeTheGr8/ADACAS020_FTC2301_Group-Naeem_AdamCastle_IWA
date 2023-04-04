@@ -4,13 +4,17 @@ const NONE_SELECTED = '0'
 let customers = 1
 let country = 'RSA'
 let currency = null
-let shipping = null
-
+let shipping = 0
+let shoes = 300 * 1;
+let toys = 100 * 5;
+let shirts = 150 * NONE_SELECTED;
+let batteries = 35 * 2;
+let pens = 5 * NONE_SELECTED;
 
 if (country === "RSA") {
     shipping = 400;
     currency = 'R'
-} else if (location === "NAM") {
+} else if (country === "NAM") {
     shipping = 600;
     currency = "$"
 } else {
@@ -18,22 +22,15 @@ if (country === "RSA") {
     currency = "$"
 }
 
-shoes = 300 * 1
-toys = 100 * 5
-shirts = 150 * NONE_SELECTED
-batteries = 35 * 2
-pens = 5 * NONE_SELECTED
-
-if ((shoes + batteries + pens + shirts + toys) > 1000 &&  location==='RSA'||'NAM') {
-	if (country === "NAM" && customers > 1) {
+if ((shoes + batteries + pens + shirts + toys) > 1000) {
+	if (country === "NAM" && customers < 2) {
 			 shipping = 0 
-    } else if (country === "RSA" && customers > 1) {
+    } else if (country === "RSA" && customers < 2) {
             shipping= 0
     }
-	}
+}
 
-
-if ((shipping == 0) && (customers !== 1)) {
+if ((shipping !== 0) && (customers !== 1)) {
     console.log(FREE_WARNING)
 }
 
