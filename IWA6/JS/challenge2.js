@@ -16,5 +16,3 @@ if ((hourOfDay !== null) && (minuteOfDay !== null) && (hourOfDay == '00') && (mi
     console.log("R" + balance.toFixed(2));
 }
 	
-	
-~
