@@ -86,8 +86,6 @@ const firstHolidayTimestamp = Math.min(
   holidays[8].date.getTime()
 );
 
-console.log(firstHolidayTimestamp);
-
 const lastHolidayTimestamp = Math.max(
   new Date(holidays[0].date).getTime(),
   holidays[1].date.getTime(),
@@ -99,8 +97,6 @@ const lastHolidayTimestamp = Math.max(
   holidays[7].date.getTime(),
   holidays[8].date.getTime()
 );
-
-console.log(lastHolidayTimestamp);
 
 
 const firstDay = new Date(firstHolidayTimestamp).getDate().toString().padStart(2, '0')
