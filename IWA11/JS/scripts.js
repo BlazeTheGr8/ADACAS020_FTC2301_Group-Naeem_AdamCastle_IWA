@@ -16,7 +16,7 @@ const donuts3 = document.querySelector('[data-key="order3"] .donuts .count');
 const pancakes3 = document.querySelector('[data-key="order3"] .pancakes .count');
 const status3 = document.querySelector('[data-key="order3"] .status dd');
 
-biscuits1.textContent = root1.getAttribute('data-biscuits');
+biscuits1.textContent = root1.dataset.biscuits;
 donuts1.textContent = root1.getAttribute('data-donuts');
 pancakes1.textContent = root1.getAttribute('data-pancakes');
 status1.textContent = root1.getAttribute('data-delivered') == "true" ? "Delivered" : "Pending";

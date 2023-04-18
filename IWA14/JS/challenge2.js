@@ -41,3 +41,5 @@ const example2 = {
 
 example1.calculate()
 example2.calculate()
+
+console.log(example1.calculate(), example2.calculate());
