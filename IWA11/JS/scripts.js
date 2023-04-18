@@ -11,13 +11,9 @@ const pancakes2 = document.querySelector('[data-key="order2"] .pancakes .count')
 const status2 = document.querySelector('[data-key="order2"] .status dd');
 
 const root3 = document.querySelector('[data-key="order3"]');
-const biscuits3 = document.querySelector(
-  '[data-key="order3"] .biscuits .count'
-);
+const biscuits3 = document.querySelector('[data-key="order3"] .biscuits .count');
 const donuts3 = document.querySelector('[data-key="order3"] .donuts .count');
-const pancakes3 = document.querySelector(
-  '[data-key="order3"] .pancakes .count'
-);
+const pancakes3 = document.querySelector('[data-key="order3"] .pancakes .count');
 const status3 = document.querySelector('[data-key="order3"] .status dd');
 
 biscuits1.textContent = root1.getAttribute('data-biscuits');

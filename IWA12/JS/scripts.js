@@ -29,10 +29,10 @@ const STATUS_MAP = {
 
 // Edit below line 
 
-const Status = document.querySelectorAll('.status');
-const reserve = document.querySelectorAll('.reserve')
-const checkout = document.querySelectorAll('.checkout')
-const checkin = document.querySelectorAll('.checkin')
+const Status = document.getElementsByClassName('status');
+const reserve = document.getElementsByClassName('reserve')
+const checkout = document.getElementsByClassName('checkout')
+const checkin = document.getElementsByClassName('checkin')
 
 for (i = 0; i < checkin.length; i++) {
   checkin[i].style.color = "";
