@@ -1,15 +1,11 @@
-function add (a, b) {
-    return a + b
-}
+const add = (a, b) =>  a + b
 
-function multiply (a, b) {
-    return a * b;
-}
+const multiply = (a, b) =>  a * b;
 
 function internal() {
-    const added = this.add(this.internal.a, this.internal.b);
-    const multiplied = this.multiply(added, this.internal.c)
-    return multiplied;
+    const added = add(this.internal.a, this.internal.b);
+    const multiplied = multiply(added, this.internal.c)
+	console.log(multiplied);
 }
 
 
@@ -41,5 +37,3 @@ const example2 = {
 
 example1.calculate()
 example2.calculate()
-
-console.log(example1.calculate(), example2.calculate());
