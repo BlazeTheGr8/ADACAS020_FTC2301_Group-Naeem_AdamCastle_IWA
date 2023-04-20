@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 const data = {
   lists: [
     ["first", [15, 11, 13, 7, 5]],
