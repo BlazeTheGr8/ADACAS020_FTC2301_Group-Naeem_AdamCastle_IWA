@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 let state = 'idle'
 let user = null
 let calculated = '1'

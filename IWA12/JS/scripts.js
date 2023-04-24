@@ -1,4 +1,4 @@
-// scripts.js
+// @ts-nocheck
 
 const STATUS_MAP = {
     shelf: {
@@ -27,14 +27,19 @@ const STATUS_MAP = {
     }
 }
 
-// Edit below line 
+// Edit below line
 
+
+
+// array solution
+
+// loop
 const Status = document.getElementsByClassName('status');
 const reserve = document.getElementsByClassName('reserve')
 const checkout = document.getElementsByClassName('checkout')
 const checkin = document.getElementsByClassName('checkin')
 
-for (let i = 0; i < checkin.length; i++) {
+for (let i = 0; i < Status.length; i++) {
   checkin[i].style.color = "";
   Status[i].style.color = STATUS_MAP[Status[i].textContent].color;
   reserve[i].disabled = STATUS_MAP[Status[i].textContent].canReserve ? false : true;
