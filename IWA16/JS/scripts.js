@@ -111,8 +111,10 @@ const createHtml = (athlete) => {
   return fragment
 };
 
-document.querySelector('[data-athlete="NM372"]').appendChild(createHtml("NM372"));
-document.querySelector('[data-athlete="SV782"]').appendChild(createHtml("SV782"));
+const { NM372: { id: NM372 }, SV782: {id: SV782} } = data.response.data
+
+document.querySelector('[data-athlete="NM372"]').appendChild(createHtml(NM372));
+document.querySelector('[data-athlete="SV782"]').appendChild(createHtml(SV782));
 
 // const createHtml = (athlete) => {
 //   firstName, surname, id, races = athlete
