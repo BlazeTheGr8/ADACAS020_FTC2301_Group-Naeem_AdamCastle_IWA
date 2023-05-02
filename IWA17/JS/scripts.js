@@ -35,7 +35,7 @@ const createData = () => {
   const startDay = current.getDay(); //changed day to getDay() function
   const daysInMonth = getDaysInMonth(current);
 
-  const weeks = createArray(5); //changed 5 to 6 for most possible weeks in a month
+  const weeks = createArray(5); 
   const days = createArray(7);
   let value = null;
 
