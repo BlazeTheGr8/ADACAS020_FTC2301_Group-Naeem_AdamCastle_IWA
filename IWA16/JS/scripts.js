@@ -76,7 +76,7 @@ const createHtml = (athlete) => {
   const fragment = document.createDocumentFragment();
 
   const title = document.createElement("h2");
-  title.textContent = data.response.data[athlete].id;
+  title.textContent = id;
   fragment.appendChild(title);
 
   const list = document.createElement("dl");

@@ -34,10 +34,12 @@ const STATUS_MAP = {
 // array solution
 
 // loop
-const Status = document.getElementsByClassName('status');
+let Status = document.getElementsByClassName('status');
 const reserve = document.getElementsByClassName('reserve')
 const checkout = document.getElementsByClassName('checkout')
 const checkin = document.getElementsByClassName('checkin')
+
+checkin[0].style
 
 for (let i = 0; i < Status.length; i++) {
   checkin[i].style.color = "";
@@ -47,3 +49,5 @@ for (let i = 0; i < Status.length; i++) {
   checkin[i].disabled = STATUS_MAP[Status[i].textContent].canCheckIn ? false : true;
 }
 
+
+checkin[0].style.color = "purple";
