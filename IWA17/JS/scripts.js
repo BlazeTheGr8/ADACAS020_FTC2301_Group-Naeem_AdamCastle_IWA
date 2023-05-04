@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 const MONTHS = [
   "January",
   "February",
@@ -22,7 +24,7 @@ const createArray = (length) => {
   const result = [];
 
   for (let i = 0; i < length; i++) {
-    result.push(i);
+    result.push(null);
   }
   return result;
 };
@@ -48,15 +50,14 @@ const createData = () => {
     };
 
     for (let dayIndex of days) {
-      const day = weekIndex * 7 + dayIndex - startDay + 1; //changed value to day
+      const day = weekIndex * 7 + dayIndex - startDay + 1; 
       const isValid = day > 0 && day <= daysInMonth;
 
       value.days.unshift({
         dayOfWeek: dayIndex + 1,
-        value: isValid ? day : "", //used correct ternary operator to show date of day if true or blank if false
-      });
+        value: isValid ? day : "",  });
     }
-    result.push(value); //push value to `const result = []`
+    result.push(value); 
   }
   return result;
 };
